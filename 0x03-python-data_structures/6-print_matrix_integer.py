@@ -4,5 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             if j != 0:
                 print(" ", end='')
-            print("{:d}".format(ij), end='')
+            print("{:d}".format(j), end='')
         print()
