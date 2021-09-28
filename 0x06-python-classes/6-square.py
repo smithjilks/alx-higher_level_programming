@@ -1,21 +1,35 @@
 #!/usr/bin/python3
+"""Class Square defines a square"""
+
+
 class Square:
     """Class Square that defines a square
     """
 
     def __init__(self, size=0, position=(0, 0)):
         """ Method to initialize the square object
+
+        Args:
+            size (int): This defines the size of the square.
+
+            position (tuple): This defines the position of the square.
+
         """
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """This method returns the size of a square."""
         return (int(self.size))
 
     @size.setter
     def size(self, value):
         """ Method to set the size value of the square object
+
+        Args:
+            size (int): This defines the size of the square.
+
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -33,6 +47,10 @@ class Square:
     @position.setter
     def position(self, value):
         """ Method that sets the position value of a square object
+
+        Args:
+            position: this tuple defines the position of the square.
+
         """
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")

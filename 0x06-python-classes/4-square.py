@@ -1,20 +1,32 @@
 #!/usr/bin/python3
+"""Class Square defines a square"""
+
+
 class Square:
     """ Class Square that defines a square
     """
 
     def __init__(self, size=0):
-        """ Method to initialize square object
+        """This method initiates a square.
+
+        Args:
+            size (int): This defines the size of the square.
+
         """
         self.size = size
 
     @property
     def size(self):
+        """This method returns the size of a square."""
         return (int(self.__size))
 
     @size.setter
     def size(self, value):
         """ Method to set the size value of the square object
+
+        Args:
+            size (int): This defines the size of the square.
+
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
