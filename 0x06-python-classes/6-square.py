@@ -49,7 +49,7 @@ class Square:
         """ Method that sets the position value of a square object
 
         Args:
-            position: this tuple defines the position of the square.
+            value (tuple): this tuple defines the position of the square.
 
         """
         if not isinstance(value, tuple):
