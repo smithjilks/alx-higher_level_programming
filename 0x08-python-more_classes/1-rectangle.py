@@ -4,6 +4,7 @@ Class:
     Rectangle: Defines a rectangle.
 """
 
+
 class Rectangle:
     """ class Rectangle that defines a rectangle object
 
