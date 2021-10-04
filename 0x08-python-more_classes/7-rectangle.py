@@ -24,7 +24,7 @@ class Rectangle:
              height (int): Defines height of a rectangle
         """
 
-        Rectangle.number_of_instances +=1
+        Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
 
