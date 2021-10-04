@@ -14,6 +14,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initialize method that holds the height and width of a rectangle
@@ -88,7 +89,7 @@ class Rectangle:
         draw_str = ""
         for h in range(self.__height):
             for w in range(self.__width):
-                draw_str += "#"
+                draw_str += str(self.print_symbol)
             if h != self.__height - 1:
                 draw_str += "\n"
         return (draw_str)
@@ -103,3 +104,24 @@ class Rectangle:
         """
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """This method returns the biggest rectangle based on error
+
+        Args:
+            rect_1: First rectangle
+            rect_2: Second rectangle
+
+        Returns:
+            The bigger rectangle, or rect_1 if both are equal
+
+        Raises:
+            TypeError: When arguments are not of type Rectangle
+        """
+
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        return (rect_1 if rect_1.area() >= rect_2.area() else rect_2)
