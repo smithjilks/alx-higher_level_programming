@@ -7,6 +7,9 @@ except if the attribute is called 'first_name'
 
 
 class LockedClass:
+    """Class LockedClass defines a class that prevents the user
+    from creating new instance attributes
+    """
     __slots__ = ['first_name']
 
     def __init__(self):
