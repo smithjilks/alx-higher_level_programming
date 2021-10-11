@@ -3,12 +3,11 @@
 Class:
     Rectagle: inherits from BaseGeometry class
 """
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
-    """ This class that inherits from BaseGeometry Class to define a rectngle"""
+    """ This class inherits from BaseGeometry Class to define a rectangle"""
 
     def __init__(self, width, height):
         """ This method initializes an instance of the class """

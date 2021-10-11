@@ -3,9 +3,8 @@
 Class:
     Square: inherits from Rectangle class
 """
-
-
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     """ This class inherits rectangle class to define a square """
