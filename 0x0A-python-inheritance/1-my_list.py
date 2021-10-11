@@ -10,9 +10,8 @@ class MyList(list):
     Args:
         list: class list
     """
-
     def print_sorted(self):
         """ This method prints the sorted list """
-        sorted_list = self
+        sorted_list = list(self)
         sorted_list.sort()
         print(sorted_list)
