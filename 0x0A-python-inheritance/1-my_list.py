@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+class MyList(list):
+    """ This class inherits the attributes references of class list
+    Args:
+        list: class list
+    """
+
+    def print_sorted(self):
+        """ This method prints the sorted list """
+        sorted_list = self
+        sorted_list.sort()
+        print(sorted_list)
