@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Function:
+    inherits_from: returns true or false if obj is an instance of a_class
+"""
+
+
 def inherits_from(obj, a_class):
     """ This function returns True/False if obj is an instance of a_class
     Args:

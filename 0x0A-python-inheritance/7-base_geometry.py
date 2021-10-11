@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Class:
+    BaseGeometry: defines the geometry of a shape
+"""
+
+
 class BaseGeometry:
     """ This class defines the area of a shape"""
     def area(self):

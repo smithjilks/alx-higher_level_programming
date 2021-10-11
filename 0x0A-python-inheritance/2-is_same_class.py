@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Function:
+    is_same_class: returns true or false if obj is a type of a_class
+"""
+
+
 def is_same_class(obj, a_class):
     """ This function returns True or False if obj is a type of a_class
     Args:
