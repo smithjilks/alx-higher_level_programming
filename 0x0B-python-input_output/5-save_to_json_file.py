@@ -16,5 +16,5 @@ def save_to_json_file(my_obj, filename):
     Raises:
         Exception: when it fails to decode object
     """
-   with open(filename, 'w', encoding="utf-8") as f:
-       json.dump(my_obj, f)
+    with open(filename, 'w', encoding="utf-8") as f:
+        json.dump(my_obj, f)
