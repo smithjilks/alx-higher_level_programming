@@ -15,7 +15,9 @@ if __name__ == "__main__":
                 "ORDER BY cities.id", (sys.argv[4],))
     query_rows = cur.fetchall()
 
+    cities = ""
     for row in query_rows:
-        print(row)
+        cities += row[0]+ ", "
+    print(cities[0: -2:])
     cur.close()
     conn.close()
