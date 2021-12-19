@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     cities = ""
     for row in query_rows:
-        cities += row[0]+ ", "
+        cities += row[0] + ", "
     print(cities[0: -2:])
     cur.close()
     conn.close()
