@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-creates the State “California” with the City “San Francisco” from the database
+lists all State objects, and corresponding City objects,
+contained in the database
 """
 
 
@@ -17,8 +18,9 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    new_State = State(name="California")
-    new_State.cities = [City(name="San Francisco")]
-    re = session.add(new_State)
-    session.commit()
+
+    for state in session.query(State).all():
+        print("{}: {}".format(state.id, state.name))
+        for city in state.cities:
+            print("    {}: {}".format(city.id, city.name))
     session.close()
