@@ -10,6 +10,6 @@ request(url, (error, response, body) => {
     const movies = JSON.parse(body).results;
     const charArray = movies.map(movie => movie.characters)
       .filter(x => x.includes('https://swapi-api.hbtn.io/api/people/18/'));
-    console.log(charArray.length);
+    console.log(String(charArray.length));
   }
 });
